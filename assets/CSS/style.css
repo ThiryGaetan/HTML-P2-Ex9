@@ -1,0 +1,20 @@
+.bgTop {
+    background-color: rgb(34, 220, 253);
+}
+.bgMid {
+    background-color: rgb(58, 152, 189);
+}
+.bgBottom {
+    background-color: rgb(80, 102, 228);
+}
+fieldset {
+    max-width: 700px;
+    line-height: 200%;
+}
+.biggerArea {
+    height: 50px;
+}
+ul {
+    list-style-type: none;
+    line-height: 150%;
+}
