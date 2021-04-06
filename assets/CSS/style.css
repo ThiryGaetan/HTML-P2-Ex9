@@ -9,6 +9,8 @@
 }
 fieldset {
     max-width: 700px;
+}
+ol {
     line-height: 200%;
 }
 .biggerArea {
