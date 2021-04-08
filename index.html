@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,82 +8,87 @@
     <title>partie 2 Exercice 9</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
+
 <body>
-    <form action="form.php">
-          <fieldset class="bgTop">
-              <legend class="bgTop">Votre identité</legend>
-             <ol>
-                 <li>
-                    <label for="civilite">Civilité :</label>
-                    <select id="civilite" name="civilite">
-                          <option value="mme">Mme</option>
-                           <option value="m">Mr</option>
-                       </select>
+    <form action="#">
+        <fieldset class="bgTop">
+            <legend class="bgTop">Votre identité</legend>
+            <ol>
+                <li>
+                    <label for="gender">Civilité :</label>
+                    <select id="gender" name="gender">
+                        <option value="mme">Mme</option>
+                        <option value="mr">Mr</option>
+                        <option value="autre">Autre</option>
+                    </select>
                 </li>
                 <li>
-                      <label for="nom">Nom :</label>
-                      <input type="text" id="nom" name="nom" placeholder="Nom">
-                  </li>
-                   <li>
-                       <label for="prenom">Prénom :</label>
-                    <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+                    <label for="lastName">Nom :</label>
+                    <!-- le label peut etre fermé après le input -->
+                    <input type="text" id="lastName" name="lastName" placeholder="Nom">
                 </li>
                 <li>
-                     <label for="email">Adresse mail :</label>
-                     <input type="email" id="email" name="email" placeholder="Adresse mail">
-                  </li>
+                    <label for="firstName">Prénom :</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Prénom">
+                </li>
+                <li>
+                    <label for="email">Adresse mail :</label>
+                    <input type="email" id="email" name="email" placeholder="Adresse mail">
+                </li>
             </ol>
-          </fieldset>
+        </fieldset>
         <fieldset class="bgMid">
             <Legend class="bgMid">Adresse de livraison</Legend>
             <ol>
                 <li>
-                    <label for="adresse">Adresse :</label>
-                    <textarea class="biggerArea" id="adresse" name="adresse" placeholder="70 rue des Jacobins 80000 AMIENS"></textarea>
+                    <label for="adress">Adresse :</label>
+                    <textarea id="adress" rows="3" name="adress"
+                        placeholder="70 rue des Jacobins 80000 AMIENS"></textarea>
                 </li>
                 <li>
-                    <label for="codePostal">Code postal :</label>
-                    <input type="text" id="codePostal" name="codePostal" placeholder="Code postal">
+                    <label for="zipCode">Code postal :</label>
+                    <input type="text" id="zipCode" name="zipCode" placeholder="Code postal">
                 </li>
                 <li>
-                    <label for="ville">Ville :</label>
-                    <input type="text" id="ville" name="ville" placeholder="Ville">
+                    <label for="city">Ville :</label>
+                    <input type="text" id="city" name="city" placeholder="Ville">
                 </li>
             </ol>
-            </fieldset>
-            <fieldset class="bgBottom">
-                <legend class="bgBottom">Informations de règlement</legend>
-                <ol>
-                    <li>
-                        <label for="choixCB">Type de carte bancaire :</label>
-                        <ul>
-                            <li>
-                                <input type="radio" id="visa" name="choixCB">
-                                <label for="visa">VISA</label>
-                            </li>
-                            <li>
-                                <input type="radio" id="masterCard" name="choixCB">
-                                <label for="masterCard">Mastercard</label>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <Label for="numCarte">Numéro de carte :</Label>
-                        <input type="text" id="numCarte" name="numCarte" placeholder="Numéro de carte">
-                    </li>
-                    <li>
-                        <label for="codeSecu">Code de sécurité :</label>
-                        <input type="text" id="codeSecu" name="codeSecu" placeholder="Code de sécurité">
-                    </li>
-                    <li>
-                        <label for="nomTitulaire">Nom du titulaire :</label>
-                        <input type="text" id="nomTitulaire" name="nomTitulaire" placeholder="Nom du titulaire">
-                    </li>
-                </ol>
-                <input type="checkbox" id="sauverCarte" name="sauverCarte">
-                <label for="sauverCarte">Enregistrer ma carte bancaire</label>
+        </fieldset>
+        <fieldset class="bgBottom">
+            <legend class="bgBottom">Informations de règlement</legend>
+            <ol>
+                <li>
+                    <label for="payment">Type de carte bancaire :</label>
+                    <ul>
+                        <li>
+                            <input type="radio" id="visa" name="payment">
+                            <label for="visa">VISA</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="masterCard" name="payment">
+                            <label for="masterCard">Mastercard</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <Label for="cardNum">Numéro de carte :</Label>
+                    <input type="text" id="cardNum" name="cardNum" placeholder="Numéro de carte">
+                </li> <!-- peut utiliser des div ici -->
+                <li>
+                    <label for="securCode">Code de sécurité :</label>
+                    <input type="text" id="securCode" name="securCode" placeholder="Code de sécurité">
+                </li>
+                <li>
+                    <label for="ownerName">Nom du titulaire :</label>
+                    <input type="text" id="ownerName" name="ownerName" placeholder="Nom du titulaire">
+                </li>
+            </ol>
+            <input type="checkbox" id="saveCard" name="saveCard">
+            <label for="saveCard">Enregistrer ma carte bancaire</label>
         </fieldset>
         <input type="submit" value="J'achète!">
     </form>
 </body>
+
 </html>

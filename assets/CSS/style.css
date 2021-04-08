@@ -1,20 +1,17 @@
 .bgTop {
-    background-color: rgb(34, 220, 253);
+    background-color: #22dcfd;
 }
 .bgMid {
-    background-color: rgb(58, 152, 189);
+    background-color: #3a98bd;
 }
 .bgBottom {
-    background-color: rgb(80, 102, 228);
+    background-color: #5066e4;
 }
 fieldset {
     max-width: 700px;
 }
 ol {
     line-height: 200%;
-}
-.biggerArea {
-    height: 50px;
 }
 ul {
     list-style-type: none;
